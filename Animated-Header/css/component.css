@@ -1,0 +1,22 @@
+/* Header */
+.large-header {
+	position: absolute;
+	background: #333;
+}
+
+.demo-1 .large-header {
+	background: url('../img/demo-1-bg.jpg');
+	background-size: cover;
+}
+
+@media only screen and (max-width : 768px) {
+	.demo-1 .main-title, 
+	.demo-3 .main-title,
+	.demo-4 .main-title {
+		font-size: 3em;
+	}
+
+	.demo-2 .main-title {
+		font-size: 4em;
+	}
+}
