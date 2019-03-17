@@ -24,7 +24,7 @@ var x = setInterval(function() {
     // If the count down is over, write some text 
     if (distance < 0) {
         clearInterval(x);
-        document.getElementById("deadline").innerHTML = " EXPIRED";
-        document.getElementById("deadline").style.color = "red";
+        document.getElementById("deadline").innerHTML = " FINISHED.";
+        document.getElementById("deadline").style.color = "GREEN";
     }
 }, 1000);
