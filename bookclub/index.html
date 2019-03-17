@@ -1,0 +1,504 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+      <meta name="description" content="AUT Computer Programming Website" />
+      <meta name="author" content="" />
+      <meta property="og:image" content="http://madalinm.com/wp-content/uploads/2015/11/photodune-6922471-web-and-html-programming-flat-illustration-l-1024x678.jpg" />
+
+      <title>AUT Code</title>
+      <!-- BOOTSTRAP CORE STYLE CSS -->
+      <!-- SECOND NAV BAR DANGEROUS CSS, BE AWARE OF .COLLAPSE -->
+      <link href="assets/css/bootstrap.css" rel="stylesheet" />
+      <!-- FONT AWESOME CSS -->
+      <link href="assets/css/font-awesome.min.css" rel="stylesheet" />
+      <!-- FLEXSLIDER CSS -->
+      <link href="assets/css/flexslider.css" rel="stylesheet" />
+      <!-- CUSTOM STYLE CSS -->
+      <link href="assets/css/style.css" rel="stylesheet" />
+      <!-- Google Fonts -->
+      <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,300' rel='stylesheet' type='text/css' />
+
+      <!-- TIMELINE -->
+      <link href="https://fonts.googleapis.com/css?family=Roboto:100i,300,400,500,700" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Allura" rel="stylesheet">
+
+      <!--  -->
+      <!-- SECOND NAV BAR DANGEROUS AREA, MAKES PROBLEM -->
+      <link rel="stylesheet" href="assets/timeline/normalize.css">
+      <!--  -->
+      <!--  -->
+      <link rel="stylesheet" href="assets/timeline/style.css">
+      <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+      <script src='https://cdn.jsdelivr.net/scrollreveal.js/3.3.1/scrollreveal.min.js'></script>
+      <script src="assets/timeline/js/index.js"></script>
+
+      <!-- END OF TIMELINE -->
+
+      <!--  -->
+      <!--  Jquery Core Script -->
+      <script src="assets/js/jquery-1.10.2.js"></script>
+      <!--  Core Bootstrap Script -->
+      <script src="assets/js/bootstrap.js"></script>
+      <!--  Flexslider Scripts --> 
+      <script src="assets/js/jquery.flexslider.js"></script>
+      <!--  Scrolling Reveal Script -->
+      <script src="assets/js/scrollReveal.js"></script>
+      <!--  Scroll Scripts --> 
+      <script src="assets/js/jquery.easing.min.js"></script>
+      <!--  Custom Scripts --> 
+      <script src="assets/js/custom.js"></script>
+
+      <!-- SYNTAX HIGHLIGHTING -->
+      <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+
+      <!-- SECOND (2nd) NAV BAR -->
+      <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
+      <link rel="stylesheet" href="navbar/css/style.css"> <!-- Resource style -->
+      <script src="navbar/js/modernizr.js"></script> <!-- Modernizr -->
+      <!-- <script src="navbar/js/jquery-2.1.1.js"></script> -->
+      <script src="navbar/js/main.js"></script> <!-- Resource jQuery -->
+
+
+
+      <!-- MY SCRIPTS -->
+      <!-- GOOGLE MAP -->
+      <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAjEXZpTzUjfH8M3gpj4l8G8h1S8JUr4RA&callback=initMap"></script>
+      <script src="assets/js/googlemap.js"></script>
+
+      <!-- DEADLINE COUNTER -->
+      <script src="assets/js/deadline.js"></script>
+
+      <!-- CALENDAR (a small rectangle showing calendar)-->
+      <!-- add 'currentdate' id to the element -->
+      <!-- USAGE: <span class="currentdate" rel="bookmark" href="#"><abbr title="Month">mon</abbr><span>day</span><sup>th</sup><sub>hour:min:sec</sub></span> -->
+      <script src="assets/js/calendar.js"></script>
+
+      <!-- Flashing logo -->
+      <script src="assets/js/changelogo.js"></script>
+   </head>
+   <body onload = "changeLogo()">
+      <!--NAVBAR SECTION START-->
+      <header>
+      	<!-- This logo flashesh between logo1.svg and logo2.svg (look changelogo.js) -->
+         <div class="cd-logo"><a href="#"><img class="img" id="img1" src="logo.svg" width="30px"><img class=img id="img2" src="" width="30px"></a><p class="logotxt"></p></div>
+
+         <nav class="cd-main-nav-wrapper">
+            <!-- navbar-collapse and collapse move-me are from main css file not nav2 css file -->
+            <ul class="cd-main-nav navbar-collapse collapse move-me">
+               <li><a href="#home">HOME</a></li>
+               <li><a href="#course-sec">TIMELINE</a></li>
+               <li><a href="#contact-sec">CONTACT</a></li>
+               <!-- <li>
+                  <a href="#0" class="cd-subnav-trigger"><span>Courses</span></a>
+                  <ul>
+                     <li class="go-back"><a href="#0">Menu</a></li>
+                     <li><a href="#0">Basic Programming</a></li>
+                     <li><a href="#0">Advanced Programming</a></li>
+                     <li><a href="#0" class="placeholder">Placeholder</a></li>
+                  </ul>
+               </li> -->
+            </ul>
+            <!-- .cd-main-nav -->
+         </nav>
+         <!-- .cd-main-nav-wrapper -->
+         <a href="#0" class="cd-nav-trigger"><span></span></a>
+      </header>
+
+
+
+      <!-- OLD NAVBAR (DEACTIVE)-->
+      <!-- 		
+         <div class="navbar navbar-inverse navbar-fixed-top " id="menu">
+         <div class="container">
+         <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#"><img class="logo-custom" src="assets/img/cpp-logo.png" alt=""  /></a>
+            <a class="navbar-brand" href="#"><img class="logo-custom" src="assets/img/python-logo.png" alt=""  /></a>               
+         </div>
+         <div class="navbar-collapse collapse move-me">
+            <ul class="nav navbar-nav navbar-right">
+               <li ><a href="#home">HOME</a></li>
+               <li><a href="#features-sec">LATEST NEWS</a></li>
+               <li><a href="#faculty-sec">INSTRUCTORS</a></li>
+               <li><a href="#course-sec">TIMELINE</a></li>
+               <li><a href="#contact-sec">CONTACT</a></li>
+               <li> 
+               </li>
+            </ul>
+         
+         </div>
+         </div>
+         </div> -->
+      <!--NAVBAR SECTION END-->
+
+<!-- MAIN CONTENT SHOULD GOT BETWEEN MAIN TAGS, OTHERWISE MOBILE VERSION NAV BAR WILL NOT WORK  -->
+   <main class="cd-main-content">
+
+      <!--HOME SECTION START-->
+      <div class="home-sec" id="home" >
+         <div class="overlay">
+            <div class="container">
+               <div class="row text-center ">
+                  <div class="col-lg-12  col-md-12 col-sm-12">
+                     <div class="flexslider set-flexi" id="main-section" >
+                        <ul class="slides move-me">
+                           <!-- Slider 01 -->
+                           <li>
+                              <h3>Edmonton Book Club</h3>
+                              <h1>Read</h1>
+                              <a  href="#course-sec" class="btn btn-primary  btn-lg" >
+                              TIMELINE 
+                              </a>
+                              <a  href="#contact-sec" class="btn btn-danger btn-lg" >
+                              Join
+                              </a>
+                           </li>
+                           <!-- End Slider 01 -->
+
+                           <!-- Slider 03 -->
+                           <li>
+                              <h3>Edmonton Book Club</h3>
+                              <h1>Discuss</h1>
+                              <a  href="#course-sec" class="btn btn-default btn-lg" >
+                              TIMELINE
+                              </a>
+                              <a  href="#contact-sec" class="btn btn-info btn-lg" >
+                              Join
+                              </a>     
+                           </li>
+                           <!-- End Slider 03 -->
+
+                           <!-- Slider 02 -->
+                           <li>
+                              <h3>Edmonton Book Club</h3>
+                              <h1>Learn</h1>
+                              <a  href="#course-sec" class="btn btn-info btn-lg" >
+                              TIMELINE 
+                              </a>
+                              <a  href="##contact-sec" class="btn btn-warning btn-lg" >
+                              Join
+                              </a>
+                           </li>
+                           <!-- End Slider 02 -->
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!--HOME SECTION END-->   
+      <div  class="tag-line" >
+         <div class="container">
+            <div class="row  text-center" >
+               <div class="col-lg-12  col-md-12 col-sm-12">
+                  <h2 data-scroll-reveal="enter from the bottom after 0.1s" ><i class="fa fa-circle-o-notch"></i> WELCOME TO THE EDMONTON BOOK CLUB <i class="fa fa-circle-o-notch"></i> </h2>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!--HOME SECTION TAG LINE END-->
+      <!-- TIMELINE SECTION START-->
+      <div id="course-sec" class="container set-pad">
+         <div class="row text-center">
+            <div class="col-lg-8 col-lg-offset-2 col-md-8 col-sm-8 col-md-offset-2 col-sm-offset-2">
+               <h1 data-scroll-reveal="enter from the bottom after 0.1s" class="header-line"> TIMELINE </h1>
+               <p data-scroll-reveal="enter from the bottom after 0.3s">
+                  WHAT HAPPEND SO FAR</a>
+               </p>
+            </div>
+         </div>
+         <!--/.HEADER LINE END-->
+         <section class="timeline">
+            <div class="container">
+
+
+               <div class="timeline-item">
+                  <a href="https://www.t.me/authwbot">
+                     <div class="timeline-img" style="background-color: yellowgreen;"><img src="assets/timeline/icons/book.png" alt="Picture"></div>
+                  </a>
+                  <div class="timeline-content js--fadeInLeft">
+                     <div class="date">17 MAR 2019</div>
+                     <h2>پرنده ی زیبای من</h2>
+                     <blockquote class="telegramblue">
+                        فریبا وفی <br>
+                        <span class="btn-hyperlink"><a href="files/parandeye_man.pdf"> Download</a></span>
+                        <hre></hre>
+                     </blockquote>
+                  </div>
+               </div>
+
+               <div class="timeline-item">
+                  <a href="https://www.t.me/authwbot">
+                     <div class="timeline-img" style="background-color: yellowgreen;"><img src="assets/timeline/icons/book.png" alt="Picture"></div>
+                  </a>
+                  <div class="timeline-content js--fadeInLeft">
+                     <div class="date">17 MAR 2019</div>
+                     <h2>وردی که بره ها می خوانند</h2>
+                     <blockquote class="telegramblue">
+                        رضا قاسمی <br>
+                        <span class="btn-hyperlink"><a href="files/verdi_ke_barreha_mikhanand.pdf"> Download</a></span>
+                        <hre></hre>
+                     </blockquote>
+                  </div>
+               </div>
+
+               <div class="timeline-item">
+                  <a href="https://www.t.me/authwbot">
+                     <div class="timeline-img" style="background-color: yellowgreen;"><img src="assets/timeline/icons/book.png" alt="Picture"></div>
+                  </a>
+                  <div class="timeline-content js--fadeInLeft">
+                     <div class="date">17 MAR 2019</div>
+                     <h2> عقرب روی پله های راه آهن اندیمشک</h2>
+                     <blockquote class="telegramblue">
+                        حسین مرتضاییان آبکنار <br>
+                        <span class="btn-hyperlink"><a href="files/aghrab.pdf"> Download</a></span>
+                        <hre></hre>
+                     </blockquote>
+                  </div>
+               </div>
+
+               <div class="timeline-item">
+                  <a href="https://www.t.me/authwbot">
+                     <div class="timeline-img" style="background-color: yellowgreen;"><img src="assets/timeline/icons/book.png" alt="Picture"></div>
+                  </a>
+                  <div class="timeline-content js--fadeInLeft">
+                     <div class="date">17 MAR 2019</div>
+                     <h2>شلغم میوه ی بهشته</h2>
+                     <blockquote class="telegramblue">
+                        علی محمد افغانی <br>
+                        <span class="btn-hyperlink"><a href="files/shalgham.pdf"> Download</a></span>
+                        <hre></hre>
+                     </blockquote>
+                  </div>
+               </div>
+
+               <div class="timeline-item">
+                  <a href="https://www.t.me/authwbot">
+                     <div class="timeline-img" style="background-color: yellowgreen;"><img src="assets/timeline/icons/book.png" alt="Picture"></div>
+                  </a>
+                  <div class="timeline-content js--fadeInLeft">
+                     <div class="date">17 MAR 2019</div>
+                     <h2>نیمه ی تاریک ماه</h2>
+                     <blockquote class="telegramblue">
+                        هوشنگ گلشیری <br>
+                        <span class="btn-hyperlink"><a href="files/nime_tarike_mah.pdf"> Download</a></span>
+                        <hre></hre>
+                     </blockquote>
+                  </div>
+               </div>
+
+               <div class="timeline-item">
+                  <a href="https://www.t.me/authwbot">
+                     <div class="timeline-img" style="background-color: yellowgreen;"><img src="assets/timeline/icons/book.png" alt="Picture"></div>
+                  </a>
+                  <div class="timeline-content js--fadeInLeft">
+                     <div class="date">17 MAR 2019</div>
+                     <h2>پیکر فرهاد</h2>
+                     <blockquote class="telegramblue">
+                        عباس معروفی <br>
+                        <span class="btn-hyperlink"><a href="files/PeykareFarhad.pdf"> Download</a></span>
+                        <hre></hre>
+                     </blockquote>
+                  </div>
+               </div>
+
+               <div class="timeline-item">
+                  <a href="https://www.t.me/authwbot">
+                     <div class="timeline-img" style="background-color: yellowgreen;"><img src="assets/timeline/icons/book.png" alt="Picture"></div>
+                  </a>
+                  <div class="timeline-content js--fadeInLeft">
+                     <div class="date">17 MAR 2019</div>
+                     <h2>مرگ یزدگرد</h2>
+                     <blockquote class="telegramblue">
+                        بهرام بیضایی <br>
+                        <span class="btn-hyperlink"><a href="files/marge_yazdgerd.pdf"> Download</a></span>
+                        <hre></hre>
+                     </blockquote>
+                  </div>
+               </div>
+               
+               <div class="timeline-item">
+                  <a href="https://www.t.me/authwbot">
+                     <div class="timeline-img" style="background-color: yellowgreen;"><img src="assets/timeline/icons/book.png" alt="Picture"></div>
+                  </a>
+                  <div class="timeline-content js--fadeInLeft">
+                     <div class="date">17 MAR 2019</div>
+                     <h2>کمدی های کیهانی</h2>
+                     <blockquote class="telegramblue">
+                        ایتالو کالوینو <br>
+                        <span class="btn-hyperlink"><a href="files/Komedihaie_Keyhani.pdf"> Download</a></span>
+                        <hre></hre>
+                     </blockquote>
+                  </div>
+               </div>
+
+               <div class="timeline-item">
+                  <a href="https://www.t.me/authwbot">
+                     <div class="timeline-img" style="background-color: yellowgreen;"><img src="assets/timeline/icons/book.png" alt="Picture"></div>
+                  </a>
+                  <div class="timeline-content js--fadeInLeft">
+                     <div class="date">17 MAR 2019</div>
+                     <h2>لایه های بیابانی</h2>
+                     <blockquote class="telegramblue">
+                        محمود دولت آبادی <br>
+                        <span class="btn-hyperlink"><a href="files/layh_hay_byabany.pdf"> Download</a></span>
+                        <hre></hre>
+                     </blockquote>
+                  </div>
+               </div>
+
+               <div class="timeline-item">
+                  <a href="https://www.t.me/authwbot">
+                     <div class="timeline-img" style="background-color: yellowgreen;"><img src="assets/timeline/icons/book.png" alt="Picture"></div>
+                  </a>
+                  <div class="timeline-content js--fadeInLeft">
+                     <div class="date">17 MAR 2019</div>
+                     <h2>آینه های در دار</h2>
+                     <blockquote class="telegramblue">
+                        هوشنگ گلشیری <br>
+                        <span class="btn-hyperlink"><a href="files/Aynehaye_Dardar.pdf"> Download</a></span>
+                        <hre></hre>
+                     </blockquote>
+                  </div>
+               </div>
+
+               <div class="timeline-item">
+                  <a href="https://www.t.me/authwbot">
+                     <div class="timeline-img" style="background-color: yellowgreen;"><img src="assets/timeline/icons/book.png" alt="Picture"></div>
+                  </a>
+                  <div class="timeline-content js--fadeInLeft">
+                     <div class="date">17 MAR 2019</div>
+                     <h2>ملکوت</h2>
+                     <blockquote class="telegramblue">
+                        بهرام صادقی <br>
+                        <span class="btn-hyperlink"><a href="files/malakoot.pdf"> Download</a></span>
+                        <hre></hre>
+                     </blockquote>
+                  </div>
+               </div>
+
+               <div class="timeline-item">
+                  <a href="https://www.t.me/authwbot">
+                     <div class="timeline-img" style="background-color: yellowgreen;"><img src="assets/timeline/icons/book.png" alt="Picture"></div>
+                  </a>
+                  <div class="timeline-content js--fadeInLeft">
+                     <div class="date">17 MAR 2019</div>
+                     <h2>نماز خانه ی کوچک من</h2>
+                     <blockquote class="telegramblue">
+                        هوشنگ گلشیری <br>
+                        <span class="btn-hyperlink"><a href="files/Namazkhaneh.pdf"> Download</a></span>
+                        <hre></hre>
+                     </blockquote>
+                  </div>
+               </div>
+
+               <div class="timeline-item">
+                  <a href="https://www.t.me/authwbot">
+                     <div class="timeline-img" style="background-color: yellowgreen;"><img src="assets/timeline/icons/book.png" alt="Picture"></div>
+                  </a>
+                  <div class="timeline-content js--fadeInLeft">
+                     <div class="date">17 MAR 2019</div>
+                     <h2>از پرندگان مهاجر بپرس</h2>
+                     <blockquote class="telegramblue">
+                        سیمین دانشور <br>
+                        <span class="btn-hyperlink"><a href="files/az_parandegane_mohajer_bepors.pdf"> Download</a></span>
+                        <hre></hre>
+                     </blockquote>
+                  </div>
+               </div>
+
+               <!-- <div class="timeline-item">
+                  <a href="https://www.t.me/autstackbot">
+                     <div class="timeline-img" style="background-color: #0088b1;"><img src="assets/timeline/icons/telegram-logo.svg" alt="Picture"></div>
+                  </a>
+                  <div class="timeline-content timeline-card js--fadeInRight">
+                     <div class="timeline-img-header timeline-img-header-blue">
+                        <h2>Stackoverflow Telegram Robot Launched</h2>
+                     </div>
+                     <div class="date">20 SEP 2017</div>
+                     <p class="telegramblue"><a href="https://www.t.me/autstackbot">Aut Stackoverflow Bot</a> is a Robot based on Telegram Application where all students can easily ask questions and receive answers similar to <a href="https://stackoverflow.com/">Stackoverflow</a> website.</p>
+                  </div>
+               </div>
+
+               <div class="timeline-item">
+                  <a href="https://www.t.me/authwbot">
+                     <div class="timeline-img" style="background-color: #0088b1;"><img src="assets/timeline/icons/telegram-logo.svg" alt="Picture"></div>
+                  </a>
+                  <div class="timeline-content timeline-card js--fadeInRight">
+                     <div class="timeline-img-header timeline-img-header-blue">
+                        <h2>HWs Telegram Robot Launched</h2>
+                     </div>
+                     <div class="date">15 SEP 2017</div>
+                     <p class="telegramblue"><a href="https://www.t.me/authwbot">Aut HWs Bot</a> is a Robot based on Telegram Application where all students can easily upload their Homeworks Solutions.</p>
+                  </div>
+               </div>
+
+
+               <div class="timeline-item">
+                  <a href="http://www.autcode.com">
+                     <div class="timeline-img" style="background-color: #436B95;"><img src="assets/timeline/icons/web.svg" alt="Picture"></div>
+                  </a>
+                  <div class="timeline-content js--fadeInLeft">
+                     <div class="date">1 SEP 2017</div>
+                     <h2>Website Launched</h2>
+                     <!-- <p></p> -->
+                     <!-- <a class="bnt-more" href="javascript:void(0)">More</a> -->
+                  </div>
+               </div> -->
+
+
+            </div>
+         </section>
+      </div>
+      <!-- TIMELINE SECTION END-->
+      <!-- CONTACT SECTION START-->
+      <div id="contact-sec"   >
+         <div class="overlay">
+            <div class="container" >
+               <div class="row text-center">
+                  <div class="col-lg-8 col-lg-offset-2 col-md-8 col-sm-8 col-md-offset-2 col-sm-offset-2">
+                     <h1 data-scroll-reveal="enter from the bottom after 0.1s" class="header-line" >CONTACT US  </h1>
+                  </div>
+               </div>
+               <div class="row set-row-pad"  >
+                  <div class="col-lg-4 col-md-4 col-sm-4   col-lg-offset-1 col-md-offset-1 col-sm-offset-1 " data-scroll-reveal="enter from the bottom after 0.4s">
+                     <h2 ><strong>Our Location </strong></h2>
+                     <hr />
+                     <div ">
+                        <h4>Edmonton, Alberta</h4>
+                        <!-- <h4><i class="fa fa-envelope-o" aria-hidden="true"></i> -->
+                        <!-- <a href="mailto:amir.jahanshahi@aut.ac.ir" target="_top"> Amir.Jahanshahi@aut.ac.ir</a></h4> -->
+                        <!-- <h4><i class="fa fa-phone" aria-hidden="true"></i>
+                           <a href="tel:+17806803295">(+1) 780 680 3295</a>
+                        </h4> -->
+                     </div>
+                     <div id="map" style="width:200px;height:200px;background:yellow"></div>
+                  </div>
+                  <div class="col-lg-4 col-md-4 col-sm-4   col-lg-offset-1 col-md-offset-1 col-sm-offset-1" data-scroll-reveal="enter from the bottom after 0.4s">
+                     <h2 ><strong>Social Conectivity </strong></h2>
+                     <hr />
+                     <div >
+                        <a href="https://t.me/ali_h93">  <img src="assets/img/Social/telegram.png" alt="" width=30% /> </a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- CONTACT SECTION END-->
+      <div id="footer">
+         &copy 2017 AUTCODE.com | All Rights Reserved
+      </div>
+      <!-- FOOTER SECTION END-->
+      </main>
+   </body>
+
+</html>
+

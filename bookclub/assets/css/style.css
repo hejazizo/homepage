@@ -1,0 +1,355 @@
+﻿/* =============================================================
+   GENERAL STYLES
+ ============================================================ */
+
+body {
+    background-color: #fafafa;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 30px;
+    font-size: 14px;
+}
+
+.set-pad {
+    padding-top: 35px;
+}
+.set-row-pad {
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+/*=====================================
+  NAVBAR STYLES 
+    ===================================*/
+
+.logo-custom {
+    max-height: 40px;
+}
+#menu {
+    background-color: rgba(28, 43, 75, 1);
+    color: #fff;
+    font-size: 12px;
+    font-weight: 900;
+    letter-spacing: 1px;
+    min-height: 70px;
+}
+.navbar-inverse {
+    border-color: transparent;
+}
+.navbar-inverse .navbar-nav > li > a,
+.navbar-inverse .navbar-nav > li > a:hover {
+    color: #FFF;
+    padding: 22px 10px;
+}
+/*=====================================
+  HOME STYLES 
+    ===================================*/
+
+.home-sec {
+    padding-top: 10px;
+    padding-bottom: 60px;
+    background: url(../img/header11.jpg) no-repeat center center;
+    padding: 0;
+    -webkit-background-size: cover;
+    background-size: cover;
+    color: #fff;
+    background-attachment: fixed;
+}
+.home-sec .overlay {
+    /* backgroun transparency*/
+    background: rgba(38, 57, 88, 0.15);
+    min-height: 500px;
+}
+.home-sec h1 {
+    color: #fff;
+    font-weight: 900;
+    font-size: 50px;
+    text-transform: uppercase;
+    padding-bottom: 35px;
+}
+.home-sec h3 {
+    text-transform: uppercase;
+}
+.set-flexi {
+    -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0);
+    -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0);
+    -o-box-shadow: 0 1px 4px rgba(0, 0, 0, 0);
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0);
+    background-color: transparent;
+    border: 0px solid #000;
+    padding-top: 120px;
+}
+.flex-control-nav {
+    display: none!important;
+}
+.set-flexi a {
+    margin: 5px;
+}
+/*=====================================
+  TAG LINE STYLES 
+    ===================================*/
+
+.tag-line {
+    background: #d3d3d3;
+    color: #000;
+}
+.tag-line h2 {
+    font-size: 20px;
+    font-weight: 900;
+    padding: 5px 10px 10px 5px;
+    color: #005E5A;
+}
+.tag-line h2 > i {
+    margin-left: 8px;
+    margin-right: 8px;
+}
+/*=====================================
+  HEADER LINE STYLES 
+    ===================================*/
+
+.header-line {
+    font-weight: 900;
+    font-size: 25px;
+    padding-bottom: 5px;
+    padding-top: 25px;
+    color: #000;
+}
+h1::after {
+    content: " ";
+    border: solid 2px #2f9484;
+    display: block;
+    width: 200px;
+    margin: 12px auto;
+}
+/*=====================================
+  ABOUT STYLES 
+  ===================================*/
+
+.about-div {
+    padding: 30px;
+}
+.icon-round-border {
+    border: 10px double #1A94C4;
+    color: #2f9484;
+    text-align: center;
+    padding-top: 15px;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    cursor: pointer;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+}
+.icon-round-border:hover {
+    color: #fff;
+    border: 10px double #fff;
+    background-color: #1A94C4;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+}
+.about-div hr {
+    border: 1px solid #1A94C4;
+}
+.about-div h3 {
+    font-size: 25px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.about-div p {
+    padding-top: 10px;
+}
+.btn-set {
+    border-radius: 0px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    margin-bottom: 20px;
+}
+/*=====================================
+  FACULTY STYLES 
+  ===================================*/
+
+#faculty-sec {
+    background-color: #000;
+    color: #fff;
+}
+#faculty-sec .header-line {
+    color: #fff;
+}
+.faculty-div h4 {
+    line-height: 30px;
+    font-weight: 700;
+}
+.faculty-div {
+    padding: 30px;
+}
+.faculty-div hr {
+    border: 1px solid #1A94C4;
+}
+.faculty-div h3 {
+    font-size: 25px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.faculty-div p {
+    padding-top: 10px;
+    padding-bottom: 15px;
+}
+.faculty-div img {
+    border: 10px double #fff;
+}
+/*=====================================
+  CONTACT STYLES 
+  ===================================*/
+
+#contact-sec {
+    padding-top: 10px;
+    padding-bottom: 60px;
+    background: url(../img/contact.jpg) no-repeat center center;
+    padding: 0;
+    -webkit-background-size: cover;
+    background-size: cover;
+    color: #fff;
+    background-attachment: fixed;
+}
+#contact-sec .overlay {
+    background: rgba(0, 0, 0, 0.76);
+    min-height: 100px;
+}
+#contact-sec h1 {
+    color: #fff;
+}
+#contact-sec .form-control {
+    background-color: rgba(255, 255, 255, 0);
+    color: #fff;
+}
+/*=====================================
+  Footer STYLES 
+  ===================================*/
+
+#footer {
+    padding: 5px 20px;
+    background-color: #2d3d5a;
+    text-align: right;
+    color: #fff;
+    font-size: 15px;
+}
+/*=====================================
+  DEADLINE COUNTER STYLES 
+  =================================*/
+
+.deadline {
+    background-color: #666666;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: rgba(255, 255, 255, 0.5) 0px 3px 3px;
+}
+/* beautiful CSS dates - Kroc Camen - camendesign.com
+   creative commons 3.0 attribution. share + remix this, just include "Kroc Camen" and/or "camendesign.com" in your CSS */
+/* ======================================================================================================================= */
+
+.currentdate[rel~=bookmark] {
+    display: block;
+    position: relative;
+    width: 60px;
+    margin-bottom: 18px;
+    border: 1px solid #888885;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    /* day */
+    
+    font: 24px/35px "Helvetica Neue", Arial, sans-serif;
+    text-align: center;
+    letter-spacing: 2px;
+    text-decoration: none;
+    color: #666;
+    background: #fcfcfc url("images/date-day-bg.png") repeat-x left 18px;
+}
+.currentdate[rel~=bookmark] sup
+/* lift the suffix, so that the number is fully centered */
+
+{
+    position: absolute;
+    padding-top: 25px;
+    font-size: 10px;
+    line-height: 11px;
+    letter-spacing: normal;
+}
+/* year + month */
+
+.currentdate[rel~=bookmark] abbr {
+    display: block;
+    font: 10px Verdana, sans-serif;
+    letter-spacing: normal;
+    color: white;
+    -moz-border-radius-topright: 5px;
+    -webkit-border-top-right-radius: 5px;
+}
+/* month */
+
+.currentdate[rel~=bookmark]>:first-child {
+    width: 60px;
+    margin: -1px 0 0 -1px;
+    padding: 0 5px;
+    border: 1px solid #832a28;
+    line-height: 16px;
+    text-align: left;
+    text-transform: uppercase;
+    background: #a33537 url("images/date-month-bg.png") repeat-x bottom left;
+}
+/* year */
+
+.currentdate[rel~=bookmark] sup+abbr {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 58px;
+    padding: 0 3px;
+    border: 1px solid #a33537;
+    border-bottom: 1px solid #832a28;
+    line-height: 14px;
+    color: #eaa;
+    text-align: right;
+}
+/* time */
+
+.currentdate[rel~=bookmark] sub {
+    display: none;
+    height: 17px;
+    border-top: 1px solid #bbd;
+    margin: 0 3px;
+    color: #aac;
+    font: 9px/16px Verdana, sans-serif;
+    letter-spacing: normal;
+    text-align: center;
+}
+.currentdate[rel~=bookmark],
+/* since the date is the permalink, add a focus rectangle around it when hovering */
+
+.currentdate[rel~=bookmark] {
+    margin-bottom: 0;
+    text-decoration: none;
+    /* Webkit > */
+    
+    outline: auto 5px -webkit-focus-ring-color;
+    outline-offset: -2px;
+    /* Gecko > */
+    
+    -moz-outline: -moz-mac-focusring solid 2px;
+    -moz-outline-radius: 0 7px 7px;
+    -moz-outline-offset: 0;
+}
+.currentdate[rel~=bookmark] sub,
+/* show the time on mouse-over / keyboard-focus */
+
+.currentdate[rel~=bookmark] sub {
+    display: block;
+}
+/* add :hover to the last 4 item and get hover for clock;*/
+/* ======================================================================================================================= */
+/*=====================================
+  TWO DIVS SIDE BY SIDE
+  =================================*/
