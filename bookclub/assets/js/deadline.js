@@ -1,5 +1,5 @@
 ﻿// Set the date we're counting down to
-var countDownDate = new Date("Oct 01, 2017 14:29:59").getTime();
+var countDownDate = new Date("APR 06, 2019 17:00:00").getTime();
 
 // Update the count down every 1 second
 var x = setInterval(function() {
@@ -19,7 +19,7 @@ var x = setInterval(function() {
     // Output the result in an element with id="deadline"
     document.getElementById("deadline").innerHTML = " " + days + "d " + hours + "h " +
         minutes + "m " + seconds + "s ";
-    document.getElementById("deadline").style.color = "red";
+    document.getElementById("deadline").style.color = "GREEN";
 
     // If the count down is over, write some text 
     if (distance < 0) {
